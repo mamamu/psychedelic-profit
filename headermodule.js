@@ -8,8 +8,8 @@ module.exports = function(headers){
   var language=(firstCSV(langStr));
   var userAgent=(inParens(userAgentStr));   
   
-  
   return JSON.stringify({"ipaddress":IP,"language":language,"os": userAgent});
+  
   
   
   function firstCSV(str){
@@ -24,7 +24,7 @@ module.exports = function(headers){
     
     }
   
-  return JSON.stringify({"ipaddress":IP,"language":language,"os": userAgent});
+  
   
   }
 
